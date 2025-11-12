@@ -182,6 +182,14 @@ bool Animal::  getHungry(){
 // ============== MAIN FUNCTION ==============
 int main() {
     
+       Enclosure en(*a[100],100,20);
+            Animal lion("leo",5,true);
+            Animal Parrot("bird",2,false);
+            Reptile rep("snake",3,true,true);
+            en.displayAnimals();
+            lion.display();
+            Parrot.display();
+            rep.display();
     
     return 0;
 }
