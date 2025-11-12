@@ -190,6 +190,8 @@ int main() {
             lion.display();
             Parrot.display();
             rep.display();
+            Visitor v("Sarah Ali",3);
+            v.displayInfo();
     
     return 0;
 }
