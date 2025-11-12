@@ -160,6 +160,25 @@ bool Animal::  getHungry(){
         int Enclosure:: getCurrentCount(){
             return currentCount;
         }
+//                        Visitor                         //
+        Visitor:: Visitor(){
+            visitorName = "";
+            ticketsBought= 0;
+        }
+        Visitor:: Visitor(string vN, int tickets){
+            visitorName= vN;
+            ticketsBought= tickets;
+        }
+        Visitor:: ~Visitor(){}
+        void Visitor:: displayInfo(){
+
+        }
+        string Visitor:: getVisitorName(){
+            return visitorName;
+        }
+        int Visitor::  getTitcketsBought(){
+            return ticketsBought;
+        }
 // ============== MAIN FUNCTION ==============
 int main() {
     
